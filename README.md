@@ -12,17 +12,17 @@ Multiplication Game – это интерактивное приложение �
 
 ## Ссылка на проект
 
-Проект доступен по ссылке: [Multiplication Game]()
+Проект доступен по ссылке: [Multiplication Game](https://gulnarafedorova.github.io/happy-numbers-test/)
 
 ## Установка и запуск
 
 1. **Клонируйте репозиторий:**
-git clone https://github.com/GulnaraFedorova/happy-numbers-test.git
-cd happy-numbers-test
+git clone https://github.com/GulnaraFedorova/happy-numbers-test.git  
+cd happy-numbers-test  
 
 2. **Установите зависимости:**
-npm install
+npm install  
 
 3. **Запустите дев-сервер:**
-npm run dev
-После запуска откройте в браузере URL, указанный в консоли.
+npm run dev  
+После запуска откройте в браузере URL, указанный в консоли.  

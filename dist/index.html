@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multiplication game</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script type="module" crossorigin src="/happy-numbers-test/assets/index-DluRXtcW.js"></script>
+      <link rel="stylesheet" crossorigin href="/happy-numbers-test/assets/index-DSUPuuQh.css">
+    </head>
+
+    <body>
+        <section class="container">
+
+            <div id="chooseN" class="game_choose">
+                <h1>Multiplication Fun</h1>
+                <div>
+                    <label for="numberN">Pick a number to practice:</label>
+                    <input type="number" id="numberN" class="answer-input" min="1" max="10">
+                    <p id="error-message" class="error"></p>
+                    <button id="randomN">🎲 Surprise me!</button>
+                </div>
+                <button id="startGame">Let's Go!</button>
+            </div>
+
+            <table id="multiplicationTable" style="display: none;"></table>
+
+            <button id="checkButton" style="display: none;">Done</button>
+            <button id="restartGame" style="display: none;">Play Again</button>
+        </section>
+
+    </body>
+
+</html>
