@@ -4,6 +4,9 @@ let currentStep = 1;
 let totalSteps = 10;
 
 document.addEventListener("DOMContentLoaded", () => {
+    disableAllButtons(true);
+    document.getElementById("checkButton").disabled = true;
+    document.getElementById("checkButton").classList.add("disabled");
     document.getElementById("numberN").addEventListener("input", validateInput);
     document.getElementById("randomN").addEventListener("click", generateRandomN);
     document.getElementById("startGame").addEventListener("click", startGame);
@@ -42,6 +45,7 @@ export function startGame() {
         document.getElementById("chooseN").style.display = "none";
         document.getElementById("multiplicationTable").style.display = "block";
         document.getElementById("checkButton").style.display = "block";
+        disableAllButtons(true);
         generateRow(1);
     } else {
         alert("Please enter a number between 1 and 10!");
@@ -122,6 +126,7 @@ function checkAnswer(step) {
                 if (currentStep <= totalSteps) {
                     generateRow(currentStep);
                     document.getElementById("checkButton").classList.remove("correct");
+                    document.getElementById("checkButton").classList.add("disabled");
                     document.getElementById("checkButton").disabled = true;
                 } else {
                     endGame();
