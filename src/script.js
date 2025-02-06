@@ -146,9 +146,16 @@ function showError(step) {
 
 //Отключение/включение всех кнопок
 function disableAllButtons(state) {
-    document.getElementById("checkButton").disabled = state;
-    document.getElementById("restartGame").disabled = state;
-    document.getElementById("startGame").disabled = state;
+    const buttonIds = ["checkButton", "restartGame", "startGame"];
+    buttonIds.forEach(id => {
+        const btn = document.getElementById(id);
+        btn.disabled = state;
+        if (state) {
+            btn.classList.add("disabled");
+        } else {
+            btn.classList.remove("disabled");
+        }
+    });
 }
 
 //Завершение игры
@@ -165,7 +172,7 @@ export function restartGame() {
 
     document.getElementById("chooseN").style.display = "block";
     document.getElementById("chooseN").removeAttribute("style");
-    
+
     document.getElementById("multiplicationTable").style.display = "none";
     document.getElementById("restartGame").style.display = "none";
 

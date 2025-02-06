@@ -124,6 +124,7 @@ button {
     padding: 0 10px;
     cursor: pointer;
     color: black;
+    background-color: #008f8f;
 }
 
 button:hover {
