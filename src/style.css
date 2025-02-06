@@ -1,0 +1,158 @@
+
+.answer-input::-webkit-outer-spin-button,
+.answer-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.answer-input {
+    -moz-appearance: textfield;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.container {
+    background: white;
+    height: 94vh;
+    margin: 3vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_choose {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.answer-input {
+    width: 40px;
+    font-size: 24px;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.answer-input.wrong {
+    color: #FA8072;
+}
+
+.error {
+    color: #FA8072;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+table {
+    width: 80vh;
+    height: 70vh;
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+tr {
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    vertical-align: middle;
+    padding: 5px 0;
+}
+
+td {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.hint-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 0;
+    margin-left: auto;
+    gap: 5px;
+    position: relative;
+}
+
+.cube {
+    width: 24px;
+    height: 24px;
+    background-color: #228B22;
+    border-radius: 3px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.cube.rise {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+button {
+    height: 30px;
+    font-size: 20px;
+    border-radius: 3px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #AFEEEE;
+}
+
+button.correct {
+    background-color: #228B22;
+}
+
+button.wrong {
+    background-color: #FA8072;
+}
+
+button.disabled {
+    background-color: #A9A9A9;
+    cursor: not-allowed;
+}
+
+button:disabled:hover {
+    background-color: #A9A9A9;
+    cursor: not-allowed;
+}
+
+#randomN {
+    background-color: #FFD700;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 40px auto;
+}
+
+#randomN:hover {
+    background-color: #FFC107;
+}
