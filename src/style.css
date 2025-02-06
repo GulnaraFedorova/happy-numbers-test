@@ -1,4 +1,3 @@
-
 .answer-input::-webkit-outer-spin-button,
 .answer-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -64,9 +63,11 @@ h1 {
 }
 
 table {
-    width: 80vh;
+    max-width: 80vh;
+    width: 100%;
     height: 70vh;
     margin: 40px auto;
+    padding: 20px;
     border-collapse: collapse;
 }
 
@@ -149,10 +150,81 @@ button:disabled:hover {
     background-color: #FFD700;
     border: none;
     cursor: pointer;
-    font-size: 20px;
     margin: 40px auto;
 }
 
 #randomN:hover {
     background-color: #FFC107;
+}
+
+@media (max-width: 550px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .answer-input {
+        font-size: 18px;
+    }
+
+    .error {
+        font-size: 12px;
+    }
+
+    table {
+        padding: 10px;
+    }
+
+    tr {
+        font-size: 18px;
+    }
+
+    td {
+        font-size: 18px;
+    }
+
+    .cube {
+        width: 20px;
+        height: 20px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 440px) {
+    .container {
+        height: 98vh;
+        margin: 1vh;
+    }
+
+    .answer-input {
+        width: 30px;
+        font-size: 16px;
+    }
+
+    table {
+        margin: 20px auto;
+    }
+
+    tr {
+        font-size: 16px;
+    }
+
+    td {
+        font-size: 16px;
+    }
+
+    .hint-container {
+        gap: 1px;
+    }
+
+    .cube {
+        width: 16px;
+        height: 16px;
+    }
 }
